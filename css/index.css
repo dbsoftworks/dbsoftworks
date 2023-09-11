@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@300&display=swap');
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Hide scrollbar, but allow scrolling */
+::-webkit-scrollbar {
+    width: 0.5em; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px; /* Rounded edges for the track */
+    background: #f1f1f1; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px; /* Rounded edges for the thumb */
+    background: #888; /* Color of the scrollbar thumb */
+}
+
+.icon-colored {
+    color: #3658a1b0; /* Change to your desired color */
+}
+.carousel-item{
+    font-weight: bold;
+}
+.c-text{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+  /* Style for the background image wrapper */
+  .home-section {
+    position: relative;
+    background-image: url('/assets/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+h3{
+    margin-top: 20px;
+}
+.list-inline-item{
+    margin-left: 5px;
+}
+.service-row,.contact-us,.about-us,.our-team{
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-about-us{
+        margin-top: 20px;
+    }
+    .about-image-div{
+        display: flex;
+        justify-content: center;
+    }
+    .about-img{
+        max-width: 300px;
+    }
+  }
+
+  
+
+/* Style for the overlay with opacity */
+.home-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) as needed */
+}
+
+/* Style for the content within the home section */
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+ /* Style for the service cards */
+ .service-card {
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand,.nav-link {
+    font-weight: bold;
+}
+
