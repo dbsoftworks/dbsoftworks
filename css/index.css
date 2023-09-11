@@ -100,3 +100,10 @@ html{
 .navbar-brand,.nav-link {
     font-weight: bold;
 }
+.copyright {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    padding: 10px 0;
+}
